@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>rs-wasm-snake</title>
+    <!-- 引入样式信息 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 注意这块，会将 rust 渲染的内容放置到 canvas 元素下 -->
+    <canvas id="canvas"></canvas>
+    <!-- 承接业务逻辑，放到尾部保证页面充分渲染好时，才会进行对于事件的注册和触发-->
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
